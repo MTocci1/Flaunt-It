@@ -1,0 +1,19 @@
+{
+  "name": "masontocci-project",
+  "version": "1.0.0",
+  "description": "Project for software dev II",
+  "main": "server/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaristGormanly/MasonTocci-Project.git"
+  },
+  "author": "Mason Tocci",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MaristGormanly/MasonTocci-Project/issues"
+  },
+  "homepage": "https://github.com/MaristGormanly/MasonTocci-Project#readme"
+}
