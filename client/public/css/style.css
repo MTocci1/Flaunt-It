@@ -5,10 +5,6 @@ body
     font-family: sans-serif;
     color: black;
     background-color: black;
-    background-size: 50% 100%;
-    background-image: url(../img/Symbol-Twitter.jpg);
-    background-position: left;
-    background-repeat: no-repeat;
 }
 
 .log-in-form
@@ -19,7 +15,7 @@ body
     background: white;
     border-radius: 20px;
     padding: 75px;
-    margin-left: 900px;
+    margin-left: 750px;
     margin-top: 35px;
     text-align: center;
 }
@@ -32,7 +28,7 @@ body
     background: white;
     border-radius: 20px;
     padding: 75px;
-    margin-left: 900px;
+    margin-left: 750px;
     margin-top: 35px;
     margin-bottom: 35px;
     text-align: center;
@@ -79,9 +75,19 @@ button
     background-color: red;
 }
 
+.sign-up-btn:hover
+{
+    background-color: rgb(223, 19, 19);
+}
+
 .google-btn
 {
-    background-color: rgb(255, 66, 66);
+    background-color: red;
+}
+
+.google-btn:hover
+{
+    background-color: rgb(223, 19, 19);
 }
 
 a
@@ -94,9 +100,122 @@ hr
     margin-top: 20px;
     width: 80%;
 }
+
 .or 
 {
     background: white;
     width: 30px;
     margin: -19px auto 10px;
+}
+
+.log-in-img
+{
+    width: 150px;
+    height: 150px;
+}
+
+.container
+{
+    display: flex;
+}
+
+.menu-box
+{
+    width :300px;
+    height: 550px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    background: black;
+    border-radius: 20px;
+    padding: 75px;
+    margin-left: 75px;
+    text-align: left;
+    line-height: .1;
+}
+.menu-box h1
+{
+    margin-left: 165px;
+    color: blue;
+}
+
+.menu-btn
+{
+    margin-left: 150px;
+    width: 200px;
+    background-color: black;
+    font-size: 30px;
+    text-align: left;
+}
+
+.menu-btn:hover
+{
+    background-color: rgb(104, 104, 104);
+}
+
+.feed-box
+{
+    position: absolute;
+    width :300px;
+    height: 550px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    background: black;
+    color: white;
+    border-radius: 20px;
+    padding: 75px;
+    margin-left: 580px;
+    text-align: left;
+    line-height: .1;
+}
+
+.feed-box h1
+{
+    color: white;
+}
+
+.feed-box-outline
+{
+    position: absolute;
+    width :502px;
+    height: 500px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    background: transparent;
+    color: white;
+    border-color: #999;
+    border: 2px solid gray;
+    text-align: left;
+    
+    line-height: .1;
+}
+
+.post-box
+{
+    position: absolute;
+    width :500px;
+    height: 400px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    background: transparent;
+    color: white;
+    border-color: #999;
+    border: 2px solid gray;
+    text-align: left;
+    line-height: .1;
+}
+
+.post-content
+{
+    margin-left: 5px;
+    line-height: .5;
+}
+
+img
+{
+    max-width: 500%;
+    max-height: 500%;
+    border-radius: 20px;
+}
+
+.feed-img
+{
+    border-radius: 20px;
+    width: 98px;
+    height: 98px;
 }
