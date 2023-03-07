@@ -2,26 +2,31 @@
 <html>
 <head>
   <title>Twitter</title>
-  <link href="../public/css/style.css" rel="stylesheet">
+  <link href="http://localhost:1337/css/style.css" id="style" rel="stylesheet">
 </head>
   <body>
     <div class="container">
+      <!--image on the left-->
       <div class="log-in-img">
-        <img src="../public/img/Symbol-Twitter.jpg">
+        <img src="http://localhost:1337/img/Symbol-Twitter.jpg">
       </div>
+      <!--log in box on the right-->
       <div class = "log-in-form">
         <h1> Twitter</h1>
         <form>
           <input type="email" class="input-box" placeholder="Email or username">
           <input type="password" class="input-box" placeholder="Password">
           <p></p>
-          <button type="button" class="sign-up-btn" onclick="location.href='home.html'">Log In</button>
+          <button type="button" class="sign-up-btn" onclick="location.href='http://localhost:1337/home'">Log In</button>
           <hr>
           <p class="or"> OR</p>
-          <button type="button" class="google-btn" onclick="location.href='home.html'">Login with Google</button>
-          <p>Don't have an account? <a href= "sign-up.html">Sign Up</a></p>
+          <button type="button" class="google-btn" onclick="location.href='http://localhost:1337/home'">Login with Google</button>
+          <p>Don't have an account? <a href= "http://localhost:1337/sign-up">Sign Up</a></p>
         </form>
       </div>
     </div>
+    <script>
+      
+    </script>
   </body>
 </html>
