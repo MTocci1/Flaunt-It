@@ -1,7 +1,7 @@
 //Email Validation
 //test if the email matches the pattern
-function isEmailValid(email) {
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+function validateEmail(email) {
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; //all patterns from chatGPT
   return emailPattern.test(email);
 }
 
@@ -9,7 +9,7 @@ const emailInput = document.getElementById('email-input');
 
 //when user types in the email box check if it is a valid email
 emailInput.addEventListener('input', function() {
-  if (!isEmailValid(emailInput.value)) {
+  if (!validateEmail(emailInput.value)) {
     emailInput.style.borderColor = 'red'; //change color of border
   } 
   else {
@@ -31,7 +31,7 @@ function testLength(pass){
     lengthValid = true;
   }
   else{
-   lengthValid = false;
+    lengthValid = false;
   }
   return lengthValid
 }

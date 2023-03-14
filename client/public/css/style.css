@@ -4,7 +4,7 @@ body
     padding: 0;
     font-family: sans-serif;
     color: black;
-    background-color: black;
+    background-image: linear-gradient(-45deg, red, black);
 }
 
 /*all images*/
@@ -66,6 +66,9 @@ button
 /*header for login*/
 .log-in-form h1
 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    font-size: 40px;
     color: red;
     margin-bottom: 30px;
 }
@@ -107,6 +110,9 @@ button
 /*sign up header*/
 .sign-up-form h1
 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    font-size: 40px;
     color: red;
     margin-bottom: 30px;
 }
@@ -153,14 +159,18 @@ hr
 }
 
 /*home page*/
+.home{
+    background-color: black;
+}
+
 /*menu box*/
 .menu-box
 {
     position: relative;
     width :300px;
     height: 550px;
-    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
     background: black;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     padding: 75px;
     margin-left: 75px;
@@ -172,7 +182,7 @@ hr
 .menu-box h1
 {
     margin-left: 165px;
-    color: blue;
+    color: red;
 }
 
 /*menu buttons*/
@@ -180,7 +190,7 @@ hr
 {
     margin-left: 150px;
     width: 200px;
-    background-color: black;
+    background-color: transparent;
     font-size: 30px;
     text-align: left;
 }
@@ -194,7 +204,7 @@ hr
 .feed-box
 {
     position: fixed;
-    width :300px;
+    width :500px;
     height: 550px;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
     background: black;
