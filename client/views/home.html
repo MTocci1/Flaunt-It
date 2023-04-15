@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Home /Flaunt-It</title>
+  <link rel="icon" type="image/png" href="http://localhost:1337/img/logo.png"/>
   <link href="http://localhost:1337/css/style.css" rel="stylesheet">
 </head>
   <body>
@@ -13,9 +14,10 @@
           </h1>
           <form>
             <!--all the buttons for the menu-->
-            <button type="button" class="menu-btn" onclick="location.href='http://localhost:1337/home'">Home</button>
-            <button type="button" class="menu-btn" onclick="location.href='http://localhost:1337/message'">Messages</button>
-            <button type="button" class="menu-btn" onclick="location.href='http://localhost:1337/profile'">Profile</button>
+            <button type="button" class="menu-btn" id="home-btn">Home</button>
+            <button type="button" class="menu-btn" id="msg-btn">Messages</button>
+            <button type="button" class="menu-btn" id="profile-btn" >Profile</button>
+            <button type="button" class="post-btn" id="post-btn">Post</button>
           </form>
         </div>
         <div class="feed-box">
@@ -24,18 +26,29 @@
             <p></p>
           </h1>
           <div class="feed-box-outline">
-            <div class="post-box">
+            <button type="button" class="post-box">
               <div class = "post-content">
                 <p>@username</p>
                 <p>Look at this gorgeous view!</p>
                 <div class="feed-img">
                   <img src="http://localhost:1337/img/pexels-blue-ox-studio-1857628.jpg">
                 </div>
+                <div class="container">
+                  <button type="button" class="like-btn">
+                    <p>❤</p>
+                  </button>
+                  <button type="button" class="comment-btn">
+                    <div class="comment-img">
+                      <img src="http://localhost:1337/img/comment-png-1.png">
+                    </div>
+                  </button>
+                </div>
               </div>
-            </div>
+            </button>
           </div>
         </div>
       </div>
     </div>
+    <script src="http://localhost:1337/js/home.js"></script>
   </body>
 </html>

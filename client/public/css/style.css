@@ -12,7 +12,7 @@ img
 {
     max-width: 500%;
     max-height: 500%;
-    border-radius: 20px;
+    border-radius: 5%;
 }
 
 /*layout*/
@@ -28,6 +28,31 @@ img
     padding: 10 px;
     margin: 10px 0;
     width: 100%;
+    height: 40px;
+    border: 1px solid #999;
+    outline: none;
+    text-indent: 10px;
+}
+
+.name-box-1
+{
+    border-radius: 20px;
+    padding: 10 px;
+    margin: 10px 0;
+    width: 50%;
+    height: 40px;
+    border: 1px solid #999;
+    outline: none;
+    text-indent: 10px;
+}
+
+.name-box-2
+{
+    border-radius: 20px;
+    padding: 10 px;
+    margin: 10px 0;
+    margin-left: 10px;
+    width: 50%;
     height: 40px;
     border: 1px solid #999;
     outline: none;
@@ -86,7 +111,7 @@ button
 {
     position: relative;
     width :350px;
-    height: 650px;
+    height: 750px;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
     background: white;
     border-radius: 20px;
@@ -181,6 +206,8 @@ hr
 /*menu header*/
 .menu-box h1
 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
     margin-left: 165px;
     color: red;
 }
@@ -198,6 +225,20 @@ hr
 .menu-btn:hover
 {
     background-color: rgb(104, 104, 104);
+}
+
+.post-btn
+{
+    margin-left: 150px;
+    width: 200px;
+    background-color: red;
+    font-size: 30px;
+    text-align: left;
+}
+
+.post-btn:hover
+{
+    background-color: rgb(222, 0, 0);
 }
 
 /*feed box*/
@@ -240,7 +281,7 @@ hr
 .post-box
 {
     position: absolute;
-    width :500px;
+    width :503px;
     height: 400px;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
     background: transparent;
@@ -249,12 +290,21 @@ hr
     border: 2px solid gray;
     text-align: left;
     line-height: .1;
+    border-radius: 0px;
+    margin-top: -3px;
 }
+
+.post-box:hover
+{
+    background-color: rgb(14, 14, 14);
+}
+
 
 /*content inside post box*/
 .post-content
 {
-    margin-left: 5px;
+    margin-bottom: 220px;
+    margin-left: -8px;
     line-height: .5;
 }
 
@@ -262,6 +312,61 @@ hr
 .feed-img
 {
     border-radius: 20px;
-    width: 98px;
-    height: 98px;
+    width: 95px;
+    height: 95px;
+}
+
+.like-btn
+{
+    display: fixed;
+    margin-top: 300px;
+    margin-left: 150px;
+    width: 50px;
+    height: 100px;
+    color: black;
+    text-shadow: 
+    -1px -1px 0 red,
+    1px -1px 0 red,
+    -1px 1px 0 red,
+    1px 1px 0 red; 
+    background-color: transparent;
+    font-size: 30px;
+    text-align: left;
+}
+
+.like-btn:hover
+{
+    color: rgb(19, 19, 19);
+}
+
+.comment-btn
+{
+    display: fixed;
+    margin-top: 305px;
+    margin-left: 70px;
+    width: 50px;
+    height: 50px;
+    
+    text-shadow: 
+    -1px -1px 0 red,
+    1px -1px 0 red,
+    -1px 1px 0 red,
+    1px 1px 0 red; 
+    background-color: transparent;
+    font-size: 30px;
+    text-align: left;
+}
+
+.comment-btn:hover
+{
+    background-color: rgb(19, 19, 19);
+}
+
+.comment-img
+{
+    border-radius: 20px;
+    width: 5px;
+    height: 5px;
+    margin-top: -13px;
+    margin-left: -10px;
 }

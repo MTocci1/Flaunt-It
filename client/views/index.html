@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Flaunt-It</title>
+  <link rel="icon" type="image/png" href="http://localhost:1337/img/logo.png"/>
   <link href="http://localhost:1337/css/style.css" id="style" rel="stylesheet">
 </head>
   <body>
@@ -17,16 +18,14 @@
           <input type="email" class="input-box" placeholder="Email or username">
           <input type="password" class="input-box" placeholder="Password">
           <p></p>
-          <button type="button" class="sign-up-btn" onclick="location.href='http://localhost:1337/home'">Log In</button>
+          <button type="button" class="sign-up-btn" id="log-in">Log In</button>
           <hr>
           <p class="or"> OR</p>
-          <button type="button" class="google-btn" onclick="location.href='http://localhost:1337/home'">Login with Google</button>
+          <button type="button" class="google-btn" id="log-in-google">Login with Google</button>
           <p>Don't have an account? <a href= "http://localhost:1337/sign-up">Sign Up</a></p>
         </form>
       </div>
     </div>
-    <script>
-      
-    </script>
+    <script src="http://localhost:1337/js/index.js"></script>
   </body>
 </html>

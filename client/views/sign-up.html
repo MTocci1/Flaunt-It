@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Flaunt-It</title>
+  <link rel="icon" type="image/png" href="http://localhost:1337/img/logo.png"/>
   <link href="http://localhost:1337/css/style.css" rel="stylesheet">
 </head>
   <body>
@@ -12,6 +13,10 @@
       <div class = "sign-up-form">
         <h1> Flaunt-It</h1>
         <form>
+          <div class="container">
+            <input type="email" id= "first-name" class="name-box-1" placeholder="First Name">
+            <input type="email" id= "last-name"class="name-box-2" placeholder="Last Name">
+          </div>
           <input type="email" class="input-box" placeholder="Username">
           <input type="email" id="email-input" class="input-box" placeholder="Email">
           <input type="password" class="input-box" id="pass1" placeholder="Password">
@@ -23,13 +28,14 @@
             <p class="passreq" id="number"> At least one number</p>
             <p></p>
           </div>
-          <button type="button" class="sign-up-btn" onclick="location.href='http://localhost:1337/home'">Sign Up</button>
+          <button type="button" class="sign-up-btn" id="sign-up">Sign Up</button>
           <hr>
           <p class="or"> OR</p>
-          <button type="button" class="google-btn" onclick="location.href='http://localhost:1337/home'">Sign up with Google</button>
+          <button type="button" class="google-btn" id="sign-up-google">Sign up with Google</button>
           <p><a href= "http://localhost:1337">Back to login</a></p>
         </form>
       </div>
+    </div>
     <script src="http://localhost:1337/js/sign-up.js"></script>
   </body>
 </html>

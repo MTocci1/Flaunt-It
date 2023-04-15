@@ -73,3 +73,14 @@ pass.addEventListener('input', function() {
     pass.style.borderColor = '';
   }
 });
+
+//redirect user to a page
+const signUp = document.getElementById('sign-up');
+signUp.addEventListener('click', redirectToHome);
+
+const signUpGoogle = document.getElementById('sign-up-google');
+signUpGoogle.addEventListener('click', redirectToHome);
+
+function redirectToHome() {
+  window.location.href = 'http://localhost:1337/home';
+}
