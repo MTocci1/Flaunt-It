@@ -5,7 +5,8 @@ console.log("[post] initialized");
 console.log("[postService] initialized");
 
 class Post {
-    constructor (username, profilePic, text, image, likes, comments) {
+    constructor (postID, username, profilePic, text, image, likes, comments) {
+    this.postID = postID;
     this.username = username;
     this.profilePic = profilePic;
     this.text = text;
@@ -15,6 +16,6 @@ class Post {
     }
 }
 
-exports.createPost = function( username, profilePic, text, image, likes, comments ) {
-    return new Post( username, profilePic, text, image, likes, comments );
+exports.createPost = function( postID, username, profilePic, text, image, likes, comments ) {
+    return new Post( postID, username, profilePic, text, image, likes, comments );
 }

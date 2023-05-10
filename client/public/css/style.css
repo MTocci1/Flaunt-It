@@ -78,7 +78,7 @@ button
 {
     position: relative;
     width :350px;
-    height: 500px;
+    height: 650px;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
     background: white;
     border-radius: 20px;
@@ -96,6 +96,10 @@ button
     font-size: 40px;
     color: red;
     margin-bottom: 30px;
+}
+
+.user-list{
+    margin-left: -85px;
 }
 
 /*img for login and sign in*/
@@ -192,6 +196,7 @@ hr
 .menu-box
 {
     position: relative;
+    color: white;
     width :300px;
     height: 550px;
     background: black;
@@ -241,18 +246,94 @@ hr
     background-color: rgb(222, 0, 0);
 }
 
+.user-profile-btn{
+    margin-left: 150px;
+    width: 200px;
+    background-color: transparent;
+    font-size: 20px;
+    text-align: left;
+}
+
+.user-profile-btn:hover
+{
+    background-color: rgb(104, 104, 104);
+}
+
+.user-profile-btn img{
+    height: 50px;
+    width:50px;
+}
+
+/*pop up after hitting post btn*/
+#popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(35, 35, 35);
+    background-image: linear-gradient(-45deg, red, black);
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 999;
+  }
+
+  #close-btn {
+    color: white;
+    margin-left: -375px;
+    margin-top: -150px;
+    text-align: center;
+    width: 5px;
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+
+  #upload-btn{
+    color: white;
+    background-color: rgb(200, 0, 0);
+    width: 300px;
+  }
+
+  #upload-btn:hover{
+    background-color: rgb(209, 11, 11);
+  }
+  
+  #popup::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+#popup input{
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: red;
+    color: white;
+    width: 300px;
+    height: 50px;
+}
+
 /*feed box*/
 .feed-box
 {
-    position: fixed;
+    position: relative;
     width :500px;
-    height: 550px;
+    height: 3500px;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
     background: black;
     color: white;
     border-radius: 20px;
     padding: 75px;
-    margin-left: 580px;
+    margin-left: 0px;
     text-align: left;
     line-height: .1;
 }
@@ -262,12 +343,19 @@ hr
     color: white;
 }
 
+.feed-box h2
+{
+    margin-top: -50px;
+    line-height: 50px;
+    color: white;
+}
+
 /*border of feed*/
 .feed-box-outline
 {
     position: absolute;
     width :502px;
-    height: 500px;
+    height: 3500px;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
     background: transparent;
     color: white;
@@ -275,6 +363,27 @@ hr
     border: 2px solid gray;
     text-align: left;
     line-height: .1;
+}
+
+.post-list{
+    color: white;
+    line-height: 10px;
+    margin-top: 450px;
+}
+
+.post-list hr{
+    width: 502px;
+    margin-left: -40px;
+}
+
+.post-list-profile-pic{
+    height: 50px;
+    width: 50px;
+}
+
+.post-list-post-img{
+    max-width: 426px;
+    max-height: 240px;
 }
 
 /*post box*/
@@ -370,3 +479,25 @@ hr
     margin-top: -13px;
     margin-left: -10px;
 }
+
+/* Not Authorized page*/
+.notAuth{
+    margin-top: 250px;
+    background-image: none;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.notAuth button{
+    width: 300px;
+    font-size: 20px;
+    background-image: linear-gradient(-45deg, red, black);
+}
+
+.notAuth button:hover{
+    background-image: linear-gradient(-45deg, rgb(255, 21, 21), rgb(23, 23, 23));
+}
+
+
+

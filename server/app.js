@@ -10,8 +10,38 @@ app.get('/', function (req, res) {
 res.sendFile('index.html', {root: './client/views' })
 })
 
+// database connection
+const db = require( "./db/connection" );
+
 app.get('/home', function (req, res) {
-res.sendFile('home.html', {root: './client/views' })
+// check for the index cookie!
+var cookies = req.headers.cookie;
+var flag = false;
+if(cookies) { 
+    cookies.split(';').forEach(function(cookie) {
+        var parts = cookie.split('=');
+        cookieName = parts[0].trim();
+        if(cookieName == 'index') {
+            flag = true;
+            var index = parts[1];
+            console.log("logging in index " + index)
+            if(index >= 0) {
+                res.sendFile('home.html', {root: './client/views' })
+            }
+            else {
+                res.sendFile('notAuth.html', {root: './client/views' })
+            }
+        }
+    });
+}
+if(!flag) {
+    res.sendFile('notAuth.html', {root: './client/views' })
+}
+// set cookie res.cookie("index", value);
+// set cookie with time cookies.set('testtoken', {maxAge: Date.now() + AUTH_TIMEOUT});
+// delete cookie res.clearCookie("index");
+
+
 })
 
 app.get('/sign-up', function (req, res) {
@@ -27,4 +57,4 @@ let postRoutes = require('./route/postRoutes');
 app.use('/api/post', postRoutes);
 
 
-app.listen(1337, () => console.log('Marist Chatter listening on port 1337!'));
+app.listen(1337, () => console.log('Flaunt-It Chatter listening on port 1337!'));

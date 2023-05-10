@@ -7,6 +7,15 @@
 </head>
   <body>
     <div class="home">
+      <!--Pop up for when the user clicks the post btn-->
+      <div id="popup" style="display: none;">
+        <form action="/home">
+          <input type="text" id="text-input" placeholder="Enter your text">
+          <input type="file" id="image-input" accept=".png, .jpg, .jpeg">
+          <button id= "upload-btn" type="submit">Post</button>
+          <button id="close-btn">X</button>
+        </form>
+      </div>
       <div class="container">
         <div class="menu-box">
           <h1>
@@ -18,9 +27,11 @@
             <button type="button" class="menu-btn" id="msg-btn">Messages</button>
             <button type="button" class="menu-btn" id="profile-btn" >Profile</button>
             <button type="button" class="post-btn" id="post-btn">Post</button>
+            <div class="userProfile" id="userProfile"> </div>
           </form>
         </div>
         <div class="feed-box">
+          <h2 id="greeting">Secure area!</h2>
           <h1>
             Feed
             <p></p>
@@ -43,6 +54,7 @@
                     </div>
                   </button>
                 </div>
+                <div class="post-list" id="posts"></div>
               </div>
             </button>
           </div>
